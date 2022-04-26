@@ -25,6 +25,7 @@ public class ScoreScript : MonoBehaviour
     {
         if(other.tag == "Ground")
         {
+            Debug.Log("score+");
             scorecomm.totalScore++;
         }
     }

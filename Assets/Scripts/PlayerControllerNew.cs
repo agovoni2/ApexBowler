@@ -24,18 +24,13 @@ public class PlayerControllerNew : MonoBehaviour
 
     void Update()
     {
-        MyInput();
+        hInput = Input.GetAxisRaw("Horizontal");
+        vInput = Input.GetAxisRaw("Vertical");    
     }
 
     private void FixedUpdate()
     {
         MovePlayer();
-    }
-
-    private void MyInput()
-    {
-        hInput = Input.GetAxisRaw("Horizontal");
-        vInput = Input.GetAxisRaw("Vertical");
     }
 
     private void MovePlayer()
@@ -44,5 +39,13 @@ public class PlayerControllerNew : MonoBehaviour
         moveDirection = orientation.forward * vInput + orientation.right * hInput;
 
         rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+
+        if (transform.position.z > 35)
+        {
+            Debug.Log("aaaaa");
+            Destroy(gameObject);
+        }
+
+
     }
 }

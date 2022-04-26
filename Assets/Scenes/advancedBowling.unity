@@ -2695,7 +2695,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 964176853}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 2
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -5601,6 +5601,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BowlingPin
       objectReference: {fileID: 0}
+    - target: {fileID: 2324806912540177359, guid: 55fe25be9b4716044ab5aa6b4f4472b5, type: 3}
+      propertyPath: scorecomm
+      value: 
+      objectReference: {fileID: 1603565798}
     - target: {fileID: 2324806912540177359, guid: 55fe25be9b4716044ab5aa6b4f4472b5, type: 3}
       propertyPath: totalScore
       value: 
